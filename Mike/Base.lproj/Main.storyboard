@@ -49,10 +49,15 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pCD-bY-SAU">
+                                <rect key="frame" x="163" y="144" width="51" height="31"/>
+                            </switch>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="2Xd-wE-DJs" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="63W-zf-zM2"/>
+                            <constraint firstItem="pCD-bY-SAU" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="JZd-05-Ji8"/>
+                            <constraint firstItem="oyu-EP-BOX" firstAttribute="top" secondItem="pCD-bY-SAU" secondAttribute="bottom" constant="24" id="QO7-iO-HkI"/>
                             <constraint firstItem="oyu-EP-BOX" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="RF4-9y-Bmx"/>
                             <constraint firstItem="fCj-Iv-tCO" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="VU8-Jt-s4l"/>
                             <constraint firstItem="5dN-LG-TXu" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="WcZ-Cy-Stm"/>
@@ -64,6 +69,7 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="additionSwitch" destination="pCD-bY-SAU" id="91v-mJ-6hX"/>
                         <outlet property="bottomTextField" destination="5dN-LG-TXu" id="9qu-Kc-O78"/>
                         <outlet property="myLabel" destination="fCj-Iv-tCO" id="ycr-lT-U7R"/>
                         <outlet property="topTextField" destination="oyu-EP-BOX" id="zgX-SO-sjp"/>
